@@ -1,0 +1,48 @@
+version: '3.0'
+
+services:
+  rasa:
+    image: anketvit/rasa-test:rasa-v35
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+      - --debug
+    depends_on:
+      - app
+  app:
+    image: anketvit/rasa-test:server-v35
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - "5055:5055"
+
+  
+  #nginx:
+   # restart: always
+    #image: "nginx:1.19"
+    #ports:
+     # - "80:8080"
+     # - "443:8443"
+    #volumes:
+     # - ./certs:/etc/letsencrypt/live/localhost
+     # - ./nginx:/etc/nginx/conf.d
+    #depends_on:
+     # - rasa-1
+      #- rasa-2
+      #- app
+  #nginx:
+   # container_name: nginx
+    #image: nginx
+    #ports:
+     # - 80:80
+      #- 443:443
+    #volumes:
+     # - ./nginx:/etc/nginx/conf.d
+      #I kept my SSL certs in a certs folder in project directory (Make sure to include this in .gitignore)
+      #- ./certs:/etc/letsencrypt/live/localhost

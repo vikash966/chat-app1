@@ -1,0 +1,2259 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - restart
+    - start
+    - back
+    - home
+    - previous
+    - hi
+    - HI
+    - Hi
+    - how to start conversation
+- intent: ask_id
+  examples: |
+    - my identity card is not working
+    - my id card is not working
+    - id card stop working
+    - identity card not working
+    - student id card not working
+    - id card stop functioning
+    - id card not works
+- intent: ask_issuewithdebarlist
+  examples: |
+    - i have issue with debar list
+    - issue with debar list
+    - debarred list isssue
+    - i have attended all classes but got debarred
+    - debar list issue
+    - my attendace is more than 75 but my name in debarred list
+    - after attending classes, my name in debar list
+    - debar list is not correct
+    - how to resolve issue with debar list?
+    - how to solve debar list issue?
+    - i want to give exam but got debarred
+- intent: ask_bookexploratory
+  examples: |
+    - how to book an exploratory course
+    - how to register an exploratory course
+    - want to book exploratory course
+    - want to register exploratory course
+    - how i can book an exploratory course
+- intent: ask_bookelective
+  examples: |
+    - how to book an elective course
+    - want to book an elective course
+    - want to register elective course
+    - how i can book elective course
+- intent: ask_feepaymentissue
+  examples: |
+    - i have fee payment issue
+    - i have issue in fee payment
+    - how to resolve fee payment issue?
+    - whom to contact to resolve fee payment issue?
+    - fee hold issues
+    - how to resolve fee hold issue?
+    - who will resolve my fee hold issue?
+- intent: ask_scholarshipissue
+  examples: |
+    - scholarship related issue
+    - how to resolve my scholarship related issues?
+    - i have issue in scholarship
+    - i have confussion in scholarship, how to resolve?
+    - problem in scholarship
+    - who will answer my scholarship related query?
+    - want to know more about scholarship
+    - scholarship issues
+- intent: greetnew
+  examples: |
+    - hey
+    - hello
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Wassup
+    - Ssup
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: ask_installment
+  examples: |
+    - If I can pay the fee in insatallment?
+    - can i deposit fee in installment?
+    - is there process to fee submisiion in installment?
+    - pay fee in installment
+    - fee in installment
+    - installment policy
+- intent: ask_feewaiver
+  examples: |
+    - Due to financial hardship I am unable pay the full fees. Could I get some waiver in fees?
+    - want to write exam. ubable to pay fees as of now
+    - can i give the exam without paying fee
+    - fee waiver policy in upes
+    - unable to pay fee, can i give the exam
+    - is there any fee waiver policy in the organization
+    - fee waiver
+    - fee extension request
+    - request for fee extension
+    - fee extension
+    - financial support
+    - can i give exam without paying full fee
+    - any relaxation in fee submission
+    - financial hardship
+    - not able to pay fee, can i give exam
+    - fee waiver option in upes
+    - fee
+- intent: ask_hostel
+  examples: |
+    - want hostel in campus?
+    - i need hostel accomadation
+    - process to get the hostel in upes
+    - what to do for hostel accomadation?
+    - how to get the hostel in campus
+    - does upes provides hostel?
+    - hostel
+    - hostel query
+    - hostel issue
+    - hostel in university
+- intent: ask_library
+  examples: |
+    - i have issue regarding library
+    - library related queries?
+    - who will handel library related issues?
+    - right person to handel library issues
+    - i lost my library book
+    - how to resolve my library related issues
+    - library queries
+    - library issues
+- intent: ask_withdrawal
+  examples: |
+    - withdrawal query
+    - I want to withdrawal from university
+    - what is withdrawal process?
+    - How i can withdrawal from upes?
+    - tell me process of admission withdrawal
+    - I am willing to withdraw my admission
+    - process for withdrawal
+    - my parents want to withdrawal my admission
+    - subject for supple not visible on the link shared
+    - subject for supplementary exam not available on the shared link
+    - subject for supplementary examination is not visible on shared link
+    - supple subject not visible on shared link
+    - can not able to see the supple subject on shared link
+    - shared link does not contain supple subject
+    - shared link not having my supple subject
+- intent: ask_educationloan
+  examples: |
+    - requirement of fee structure for educational loan
+    - i need fee structure for my educational loan
+    - fee structure for education loan
+    - need fee structure of B.Tech for education loan
+    - i take education loan, need fee structure for it.
+    - for education loan, i need fee structure
+    - fee structure
+    - i need fee structure
+- intent: ask_bulletin
+  examples: |
+    - what is the year back criteria?
+    - please tell me year back criteria and who will process?
+    - is there any year-back criteria in the university?
+    - year-back criteria
+    - year-back
+    - year back
+    - criteria for preparation of debar list
+    - criteria for preparation of list of students debarred from exams
+    - criteria for preparation of debar list or list of students debarred from exams
+    - why i am not selected for scholarship and my friend did?
+    - i did not get the scholarship but my friend get it, why?
+    - why i am not selected for acholarship?
+    - elegibility criteria for scholarship
+    - did not get the academic scholarship
+    - did not get the merit scholarship
+    - did not get the domicile scholarship
+    - did not get the JEE mains scholarship
+    - Dress code for students
+    - what is uniform in university?
+    - i want to know the dress code in university
+    - is there any dress code in university
+- intent: ask_courseraissue
+  examples: |
+    - i have coursera login issue
+    - how to resolve my coursera login issue
+    - coursera login issue
+    - coursera issue
+    - i am nort able to login in my coursera account
+    - coursera not working
+    - coursera account is not working
+- intent: ask_coursechange
+  examples: |
+    - want to change program
+    - shifting of classes
+    - i want to change my course
+    - how i can change my course
+    - process to change the course in university
+    - i want to request for course change
+    - how to change my course?
+    - who is handling course change request?
+    - Is there any process available to change the course?
+    - want to opt hons
+    - want to opt out hons
+    - want to switch from hons to non-hons
+    - want to switch from non- hons to hons
+    - want to take hons
+    - want to change from non-hons
+    - want to change specialization
+    - how to chnage my specialization
+- intent: ask_domicilediscount
+  examples: |
+    - domicile discount is not given
+    - I did not get the domicile discount
+    - what to do if domicile discount is not credited?
+    - why domicile discount is not given
+    - domicile discount not credited
+- intent: ask_examinfo
+  examples: |
+    - where can I see upcoming dates of examination?
+    - when is my exam
+    - when will be my exam
+    - where i can see academic calendar?
+    - holidays in academic calendar
+    - where I can see the datesheet?
+    - when will the link enable for supplementary odd sem examination?
+    - when will the link enable for supplementary even sem examination?
+    - when will the link disable for supplementary odd sem examination?
+    - when will the link disable for supplementary even sem examination?
+    - when the non-theory examination conducted?
+    - how would i know the examination datesheet?
+    - how to know the end semester examination schedule?
+    - how to check the supple examination link?
+    - how to download the supplementary exam date sheet?
+    - link for supple exam
+    - end sem examination schedule
+    - where i can see the list of hilidays
+    - list of holidays
+    - tell me list of holidays
+    - holidays list in upes
+    - total holidays in this year
+    - upcoming holidays
+    - where I can see the date of end terms
+    - how would i know the end term datesheet?
+    - how to know the end terms schedule?
+    - end term examination schedule
+- intent: ask_examissue
+  examples: |
+    - my course is not showing for supple examination registration?
+    - I want to cancel supple exam registration
+    - I am not satisfied from re-evaluation result.
+    - If I am covid positive, when can I appear in the examination?
+    - I am facing issue in supplementary exam registration.
+    - can i give exam if i am corona positive?
+    - How can I cancel my supplementary examination registration?
+    - what to do if i am not satisfied with re-evaluation result?
+    - how to challenge my re-evaluation result?
+    - subject is not visible for supplementary examination registration.
+    - course code in not avialale for supplementary examination registration.
+- intent: ask_block
+  examples: |
+    - How to reach block-6
+    - where i can find block-6
+    - block six
+    - block-6
+    - block 6
+- intent: ask_examtechissue
+  examples: |
+    - Not able to do supplementary exam registration due to portal blocked.
+    - can not do supple exam registration due to poratl blocked.
+    - my exam is blocked
+    - my exam is not showing on black-board
+    - my course is not visible on black board
+    - my student id is not working.
+    - what to do if my student ID stop working.\
+    - STU ID stop working
+- intent: ask_depttinfo
+  examples: |
+    - I am year back student, where can I contact for non-theory examination?
+    - I have year back, how to know my examination details?
+    - where can I contact for summer school?
+    - where can I contact for directed readings?
+    - when will the mid semester exam held?
+    - mid semester exam schedule details
+- intent: ask_latefeefinewaiver
+  examples: |
+    - Is there any late fee fine waiver option?
+    - is there any possibility to waive off my late fee fine?
+    - late fee fine waive option
+    - removal of exta late fee fine
+    - late fee fine removal option
+    - late submission of fee fine waive off
+    - waive off of late fee fine
+    - how to remove my late fee fine?
+    - what to do to waive off my late fee submission fine?
+    - fine waive on late fee submission
+- intent: ask_registration
+  examples: |
+    - what is the process of registration?
+    - how i can do my registration process complete?
+    - can you please tell me about registration process?
+    - registration process in university
+    - how do i complete the registration process?
+    - registration process
+    - what to do to register my self for new session?
+    - process of registration
+    - what is the process of re-registration?
+    - registration
+- intent: ask_suppledeadlineover
+  examples: |
+    - missed the deadline to register for supplementary exam
+    - i could not able to register for supplementary examination
+    - forget to register supplementary examination
+    - deadline of supplementary exam registration is over
+    - could not meet the deadline to register for supplementary exam
+    - missed to register supplementary exam
+    - foget supple exam registration
+    - deadline over for supple exam registration
+    - registration is closed for supple examination, what to do?
+    - supplementary exam registration is closed
+    - supple examination registration closed
+- intent: ask_forgetsuppledetails
+  examples: |
+    - Forget registered subject details for supplementary examination
+    - forget subject details for supple exam
+    - what to do if forget details of supple examination
+    - how to get the details of registered subject for supplementary examination
+    - forget subject details for supplementary examination
+    - missed subject details for supple exam
+    - missed subject details for supplementary examination
+- intent: ask_registersupple
+  examples: |
+    - where can i register for supple odd semester examination?
+    - where can i register for supple even semester examination?
+    - where can i register for supplementary odd semester examination?
+    - where can i register for supplementary even semester examination?
+    - how to register for supple exam
+    - How to apply for supple exams
+    - how to apply for supplementary examination
+    - how to apply for supple examination
+    - how to register for supplementary examination
+    - what to do for supple exam registration?
+    - i want to do registration for supplementary exam
+    - want to do registration for supple exam
+    - how to get register for supple exam
+- intent: ask_datesheetpublish
+  examples: |
+    - How many days before date sheet will publish?
+    - how many days before datesheet will publish?
+    - datesheet publish to students, how many days before
+    - how many days prior datesheet will publish?
+    - how many days prior date sheet will publish?
+    - how many days prior we can see the exam date sheet?
+    - how many days prior we can see the examination datesheet?
+- intent: ask_progressionpolicy
+  examples: |
+    - what is the progression policy?
+    - progression policy
+    - how do i know about the progression policy of the university?
+    - tell me the progression policy
+    - progression policy in the university
+    - progression policy followed by UPES
+- intent: ask_downloadhallticket
+  examples: |
+    - How can we download hall ticket for examinations?
+    - want to download exam hall ticket
+    - hall ticket for examination
+    - download hall ticket
+    - from where i can download hall ticket for end sem exam
+    - tell me how to download hall ticket for examination?
+    - exam hall ticket
+    - where i can get exam hall ticket?
+- intent: ask_collectgradecard
+  examples: |
+    - how physical degree and grade card can be collected?
+    - How can I collect my degree?
+    - How can I collect my grade card?
+    - process to collect the physical degree
+    - how i can get my physical degree?
+    - what to do to get my physical degree?
+    - what to do to get my grade card?
+- intent: ask_authorityletter
+  examples: |
+    - if physical documents being collected through authorized person, authority letter format can be downloaded from?
+    - is there any format for authority letter for document collection
+    - format for authority letter
+    - authority letter format for degree collection
+    - can i give authority to other person to collect my degree, what is format for authority letter
+    - can i authorize someone to collect my degree if so what is authority letter format
+- intent: ask_foodcourt
+  examples: |
+    - how to reach food court
+    - how to reach canteen
+    - where is food court
+    - location of food court in university
+    - location of food court in campus
+    - direct me to food court
+    - help me to reach food court
+    - food court location
+    - food court location on google map
+- intent: ask_infirmary
+  examples: |
+    - how to reach infirmary
+    - how to reach UPES infirmary
+    - where is infirmary
+    - location of infirmary in university
+    - location of infirmary in campus
+    - direct me to infirmary
+    - help me to reach infirmary
+    - infirmary location
+    - infirmary location on google map
+- intent: ask_finance
+  examples: |
+    - how to reach finance office
+    - how to reach finance office in UPES
+    - where is finance office
+    - location of finance office in university
+    - location of finance office in campus
+    - direct me to finance office
+    - help me to reach finance office
+    - finance office location
+    - finance office location on google map
+- intent: ask_writer
+  examples: |
+    - Can I take writer for exams if I am sick?
+    - Can I take writer for exams if I am injured?
+    - Can I take writer for exams if I am not medically fit?
+    - Can I take writer for exams if I am not able to write?
+    - Can I take writer for exams if I am medically unfit?
+    - can i take writer in exam?
+    - writer in exam?
+    - writer for students
+- intent: ask_libraryloc
+  examples: |
+    - how to reach library
+    - how to reach UPES library
+    - where is library
+    - location of library in university
+    - location of library in campus
+    - direct me to library
+    - help me to reach library
+    - library location
+    - library location on google map
+- intent: ask_mac
+  examples: |
+    - how to reach mac
+    - how to reach multi activity center
+    - where is MAC
+    - location of MAC in university
+    - location of MAC in campus
+    - direct me to MAC
+    - help me to reach MAC
+    - MAC location
+    - MAC location on google map
+    - where is multi activity center
+    - location of multi activity center in university
+    - location of multi activity center in campus
+    - direct me to multi activity center
+    - help me to reach multi activity center
+    - multi activity center location
+    - multi activity center
+    - location on google map
+    - how to reach MAC
+- intent: ask_reevaluation
+  examples: |
+    - when can i apply for re-evaluation?
+    - when can i apply for reevaluation?
+    - where can i apply for re-evaluation?
+    - where can i apply for reevaluation?
+    - want to apply for re-evaluation
+    - how can i apply for re-evaluation?
+    - process to apply for re-evaluation
+- intent: ask_reevaluationfee
+  examples: |
+    - what is re-evaluation fee?
+    - what is reevaluation fee?
+    - fee for re-evaluation
+    - challenge evaluation fee
+    - re-evaluation fee
+    - reevaluation fee
+    - how much fee for re-evaluation?
+    - cost for re-evaluation fee
+    - is there any fee for re-evaluation?
+- intent: ask_reevaluationresult
+  examples: |
+    - when can i get the result of re-evaluation?
+    - where can i get the result of re-evaluation?
+    - how to get the result of re-evaluation?
+    - when can i get the result of reevaluation?
+    - where can i get the result of reevaluation?
+    - how to get the result of reevaluation?
+    - result of re-evaluation
+    - re-evaluation result
+- intent: ask_improvementexam
+  examples: |
+    - I am graduated student and need to apply improvement exam?
+    - i want to apply for improvement exam
+    - can i apply for improvement exam
+    - how do i give the improvement examination
+    - is there any process for improvement exam
+    - improvement examination
+    - what is the process to apply for improvement exam?
+    - want to register for improvement exam
+- intent: ask_ufm
+  examples: |
+    - what is the process of unfair means cases?
+    - what is the process of UFM?
+    - what is the process of UFM in online mode?
+    - what is the process of UFM in offline mode?
+    - what is the process of unfair means cases in online mode?
+    - what is the process of unfair means cases in offline mode?
+    - UFM
+    - infair mean cases process
+    - rule of UFM
+    - rules of unfair mean cases
+- intent: ask_nothavingidexam
+  examples: |
+    - if i do not have my UPES ID card during examination?
+    - can i give exam if i do not carry the UPES ID card?
+    - forget UPES ID card, can i eligible to give exam
+    - forget UPES ID card in exam
+    - not having UPES ID card in end sem examination
+    - can i give the exam without UPES ID card?
+    - how to give the end sem exam without UPES ID card?
+- intent: ask_downloadgradecard
+  examples: |
+    - How can we download the grade cards?
+    - how can we download the results?
+    - how i can see the results?
+    - how i can see the grade cards?
+    - where i can download the grade card?
+    - download grade card
+    - view grade card
+    - find grade card
+- intent: ask_downloadGPA
+  examples: |
+    - how can we download GPA percentage formula?
+    - how can i download GPA percentage letter?
+    - GPA percentage
+    - GPA percentage formula
+    - GPA percentage letter
+    - how to find the GPA formula?
+    - how to find the GPA letter?
+    - where i can find the GPA formula?
+    - Where i can find the GPA letter?
+- intent: ask_exploratoryissue
+  examples: |
+    - could not register for exploratory courses
+    - i have exploratory mapping issue
+    - exploratory issue
+    - I have difficulty in exploratory course registration
+    - I am facing mapping issues in exploratory courses
+    - how to resolve my exploratory course mapping issues
+    - exploratory course issues
+    - exploratory mapping issues
+    - who will resolve exploratory course mapping issues
+    - why am i not able to register my exploratory course?
+- intent: ask_resultnotvisible
+  examples: |
+    - want to know the result as the portal is blocked
+    - grade card is not visible
+    - Could not able to see the result due to blocked portal
+    - I can not able to see my grade card
+    - why my grade card is not visible?
+    - why my result is not visible?
+    - result not visible
+    - grade card not visible
+    - why result portal is blocked?
+    - why result link is disabled?
+- intent: ask_studentportalissue
+  examples: |
+    - any student portal issue
+    - email id issue
+    - wi-fi is not working
+    - wi fi not working
+    - not able to acees internet
+    - intenet is not working
+    - why my net not working
+    - wi-fi problem
+    - wifi problem
+    - problem in wifi
+    - wifi issue
+    - email id is not working
+    - email id not works
+    - could not able to access email id
+    - email id problem
+    - problem in email id
+    - why my email id not working
+    - student portal blocked
+    - my portal is not working
+    - my portal is blocked
+    - who will unblock my student portal
+    - who will resolve student portal issues
+    - what to do if student portal is blocked
+    - my student portal is blocked
+    - whome to contact to unblocked my student portal
+    - student portal issues
+- intent: ask_feerefund
+  examples: |
+    - when can I get the fee refund for cancelled examination?
+    - refund for cancelled examination
+    - I want my refund of cancel exam
+    - I want refund of cancelled examination
+    - fee refund for cancel exam
+    - fee refund of cancelled examination
+    - how i will get the fee refund for cancelled examination?
+- intent: ask_bifurcation
+  examples: |
+    - other fee details bifurcation
+    - fee bifurcation
+    - how to know my fee bifurcation details?
+    - fee bifurcation details
+    - other fee bifurcation
+    - bifurcation of fee structure
+- intent: ask_announcement
+  examples: |
+    - how to know the announcement of merit scholarship?
+    - how to know the announcement of academic scholarship?
+    - announcement of academic scholarship
+    - announcement of merit scholarship
+    - how to know my merit scholarship status?
+    - how to know my academic scholarship status?
+    - is there any announcement of academic scholarship?
+    - is there any announcemnet of merit scholarship?
+- intent: ask_academicinfo
+  examples: |
+    - How can we make request for the backlog?
+    - how can we make request for medium of instruction certificate?
+    - how can we request for online verification of academic records?
+    - is it possible to verify academic records online?
+    - I want to know the process to verify my academic record online.
+    - how the transcript can be issued?
+    - how i can know the process for issuing my transcripts?
+    - what is the process to issuing the transcripts?
+    - how the marksheet can be issued?
+    - process for issuing marksheet
+    - what is the process for apply duplicate degree?
+    - what is the process for apply duplicate gradecard?
+    - my degree is lost, how i get my degree?
+    - my gradecard is lost, process to get the new gradecard.
+    - my transcript is lost
+    - my transcript is damaged, how to ger new one?
+    - can original degree be dispatched to my home address?
+    - is it possible to get my original degree to delivered at my address?
+    - can original grade card be dispatched?
+    - possibility to get the original degree or gradecard on my home address
+- intent: out_of_scope
+  examples: |
+    - I am asking you an out of scope question
+    - 4 + 2 = ?
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site :(
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Do you know Kevin Pelton
+    - Find nearest pizzahut
+    - Have we met before?
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+    - I am an opioid addict
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text on light gray background ...
+    - I changed my mind
+    - I have installed it
+    - I ned a GP in 94301
+    - I need a GP in 94301
+    - I need a girl friend!
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - I want a new laptop
+    - I want book a hotel
+    - I want french cuisine
+    - I want pizza
+    - I want to die
+    - I want to order pizza
+    - I want to use pipe
+    - I will check
+    - I'm a shitmuncher
+    - Is Rasa really smart?
+    - Is this Goal-Oriented Chatbot?
+    - Is today saturday?
+    - Mail me the guide
+    - Make me a sandwich
+    - NLW
+    - Nice name
+    - Now?
+    - Pizza bot
+    - Recharge
+    - SEL ME SOMETHING
+    - The Try it out is not working
+    - The weather is good
+    - Today
+    - Try it out broken
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - Kristin, I want to marry you
+    - german language?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - aRE YOU SINGLE
+    - again?
+    - alexa, order 5 tons of natrium chloride
+    - and make chicken noises into the phone
+    - are the newsletter worth the subscription?
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you russian?
+    - are you sick
+    - are you vegan
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - but if rasa is open source why do you have a sales team
+    - buy one please
+    - buy groceries
+    - call me father
+    - can we keep chatting?
+    - can you book dinner
+    - can you cheer me up
+    - can you cook dinner
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you help me with your docs
+    - can you help me with your docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - cannot see
+    - chgfhgh
+    - chinese ok?
+    - colder
+    - common, just try
+    - connect to alexa
+    - cr
+    - custom service
+    - did i break you
+    - dinner
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you liek cheese?
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - do you want to marry me?
+    - docs
+    - doctor
+    - everything
+    - example of a chatbot
+    - genocide
+    - get me a club mate
+    - give me a girl friend
+    - give me food
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - have you ever seen [Keith Reilly](name)?
+    - help with [Alma Abrams](name)
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - how
+    - how about NYC
+    - how are Alicia Jackson cats doing?
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - how to go to newyork ?
+    - i am hungry
+    - i am hungry, what should i do?
+    - i am not a developer but need this for business
+    - i am qq
+    - i can't deal with _your_ request
+    - i do not care how are you
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - i wanna party
+    - i want a non dripping ice cream
+    - i want caffe
+    - i want food
+    - i want good flycam
+    - i want more of you in my life!
+    - i want pizza
+    - i want pizza!!
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to eat
+    - i want to find new friends
+    - i want to find out what you can build with rasa
+    - i want to fly
+    - i want to grab lunch
+    - i want to know current situtation in pakistan
+    - i want to order a pizza
+    - i want to see your happy customers
+    - i will tame a mouse for you
+    - is [John Lewis](name) still married to you
+    - is it a wasteland full of broken robot parts?
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - it's a pity
+    - i´m hungry
+    - license
+    - ljljl
+    - lunch
+    - lunch??
+    - machine learning
+    - mail me the steps
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - pizza
+    - please help with my ice cream it's dripping
+    - please hjave lunchj
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please play music
+    - rasa topics
+    - really? you're so touchy?
+    - refresh
+    - region with no. of records
+    - remember my name
+    - search wikipedia
+    - shitmuncher
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked  ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about Stanley Ramirez?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - what is differance between bot and mascot?
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is Sharon Zeches
+    - who is the MD of samsung bangalore ?
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will anser my email?
+    - who's Bill Gates?
+    - whta you think about gdpr?
+    - why do you need that?
+    - why its called rasa ?
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - would you like some water
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - you're a woman
+    - ı am learning python
+    - CALL THE POLICE
+    - tertyryutyi
+    - wsdrcftvgybhnj
+    - why sky is blue?
+    - what kind of bird are you?
+    - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - Do you have a demo?
+    - Cars
+    - please voulette
+    - Out of scope question.
+    - i need money
+    - no, i need cash, money! Do you have it ?
+    - the beatles
+    - Hi i want to go palghar
+    - I want to go palghar
+    - your contry name
+    - you girl
+    - gsaf
+    - expert of rasa
+    - i want play ball
+    - flight catch up
+    - how do you like your coffee
+    - Can you get analytics on who I'm chatting with when I use Rasa
+    - coronavirus
+    - have you heard of corona?
+    - where do i type in commandy
+    - where to type in commands
+    - kiss me
+    - you have to
+    - what type of bot?
+    - sfasd
+    - asdkjasdhjkasd
+    - j  bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - asdfgasd
+    - asdfgasdas
+    - how to start conversation
+    - sanddep das
+- intent: out_of_scope_non_english
+  examples: |
+    - Wie fange ich mit Rasa an?
+    - hilf mir beim start
+    - tschüssikowski
+    - ¿Qué pasa?
+    - ça va ?
+    - como te llamas
+    - wer bist Du?
+    - como inicio en rasa
+    - come stai?
+    - como estas
+    - de donde eres
+    - de que lugar eres?
+    - epdi iruka
+    - eres humana
+    - kalhmera sara ti kaneis
+    - kannst du auch deutsch?
+    - kannst du dies auch auf deutsch?
+    - oui je besoine de l'aide
+    - que puedes hacer?
+    - tu parles francais?
+    - tudo bom
+    - tu pagal
+    - kannst du mir helfen
+    - tu kaisi he
+    - こにちは
+    - 日本語分かる？
+    - chào
+    - 你好
+    - I'm speaking a non-english language.
+    - 呵呵
+    - 我该如何使用
+    - 你懂中文吗？
+    - 您好
+    - 你叫什么名字
+    - 你是谁
+    - 中文
+    - kya hindi me bat kar sakate ho
+    - can we talk in hindi
+    - kya haal chal hai bhai ke
+    - Dumme sara
+    - αστεία λές
+    - rasa codigo abierto
+    - 卧槽
+- intent: ask_howbuilt
+  examples: |
+    - By what means were you made?
+    - By what method were you fashioned?
+    - Can you explain how you were created?
+    - Can you give me an idea as to how you were created?
+    - Can you say how you were constructed?
+    - Do you know how you were built?
+    - Do you know how you were made?
+    - How did they build you?
+    - How did they create you?
+    - How did they make you?
+    - How did you come into being?
+    - How did you come to be?
+    - How exactly were you devised?
+    - How exactly were you made?
+    - How were you built?
+    - How were you conceived?
+    - How were you constructed?
+    - How were you devised?
+    - How were you formed?
+    - How were you made into who you are?
+    - How were you made?
+    - How were you materialized?
+    - How were you set up?
+    - I want to know how you were formed
+    - I'd like to know how you were created
+    - I'd like to know how you were put together?
+    - In what manner were you built?
+    - In what manner were you constructed?
+    - In what manner were you formed?
+    - In what way were you created?
+    - In what way were you formed?
+    - In what way were you made?
+    - In what way were you shaped?
+    - In which manner were you devised?
+    - Let me know how you were made exactly
+    - Specify how you were created?
+    - Tell me how you were made?
+    - What process was used to build you?
+    - What process was used to create you?
+    - What was the process for making you?
+    - You originated through what means?
+    - how have you been built?
+    - how were you made?
+    - in what way were you made?
+    - so how were you made?
+    - what are you made of
+    - Are you built using rasa?
+    - Are u developed in rasa
+    - are you build with rasa ?
+    - how are you created
+- intent: ask_howdoing
+  examples: |
+    - Ahoy matey how are you?
+    - Are you ok?
+    - Do you feel good?
+    - Do you have a great day?
+    - HI Sara, what are you up to?
+    - Hi Sara! How are you?
+    - How are You?
+    - How are things?
+    - How are you
+    - How are you men?
+    - How are you today?
+    - How are you?
+    - How was your day?
+    - How you doing?
+    - How's it going
+    - How's it hanging?
+    - How's life treating you friend?
+    - How've you been?
+    - Hows it going
+    - I'm fine and you
+    - Is everything ok?
+    - What's going on?
+    - What's new?
+    - What's up
+    - What's up man
+    - and you
+    - are you alright
+    - are you happy
+    - are you having a good day
+    - are you ok
+    - are you okay
+    - h r u ?
+    - hello, how are you?
+    - hey how are you?
+    - hi how are you?
+    - hi how u doing
+    - hi sara, how are you?
+    - how ?
+    - how are things going
+    - how are things with you?
+    - how are u
+    - how are u?
+    - how are xou
+    - how are you
+    - how are you ?
+    - how are you doing
+    - how are you doing this morning
+    - how are you doing today my sweet friend
+    - how are you doing today?
+    - how are you doing?
+    - how are you feeling
+    - how are you today
+    - how are you'
+    - how are you?
+    - how are you????
+    - how are yuo
+    - how do you do?
+    - how have you been
+    - how is it going
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how r u
+    - how r u ?
+    - how r u>
+    - how you doing
+    - how you doing?
+    - how's it going?
+    - how's life
+    - how's life been treating you?
+    - how's your day going
+    - howareyou
+    - hw r u?
+    - is everything all right
+    - is everything okay
+    - nah, I'm good - how are you doing?
+    - okay hi how are you?
+    - wassup>
+    - what about your day
+    - what are you up to?
+    - what's good
+    - what's up
+    - what's up sara
+    - what's up?
+    - whatchcha doing
+    - whatchya upto ?
+    - whats goin on
+    - whats new
+    - whatsapp
+    - yow are you
+    - how are you your buddy
+    - Hey Sara, how's it going
+    - are you cool
+- intent: ask_howold
+  examples: |
+    - Do you have friends the same age as you, if so, how old are they?
+    - How long have you been alive?
+    - How long have you been around?
+    - How long have you occupied the earth?
+    - How many candles were on your last birthday cake?
+    - How many years have you been alive?
+    - How many years have you lived?
+    - How old are you?
+    - How old were you on your last birthday?
+    - How old will you be on your next birthday?
+    - Tell me your day, month and year of birth.
+    - What is your age?
+    - What is your birthdate?
+    - What is your count of years being alive so far?
+    - What was your age on your last birthday?
+    - What will be your age on your next birthday?
+    - What year were you born?
+    - Whats your age?
+    - When do you celebrate your day of birth?
+    - and you are how many years old?
+    - can you tell me exactly how old you are?
+    - can you tell me what number represents your age?
+    - can you tell me your age?
+    - do you know how old you are?
+    - give me your age?
+    - how about your age
+    - how aold are you
+    - how many ages?
+    - how many years old are you?
+    - how old are u
+    - how old are you
+    - how old are you?
+    - how old were you on your last birthday?
+    - how old were you when you celebrated your last birthday?
+    - how old will you be this year?
+    - how old?
+    - in what year were you born?
+    - tell me how old you are?
+    - tell me your age number?
+    - tell me your age?
+    - what age are you
+    - what age were you when you celebrated your last birthday?
+    - what is your age?
+    - what is your birthday?
+    - what is your exact age?
+    - what number represents your age?
+    - what year were you born?
+    - what's your age?
+    - whats your age?
+    - whats your birth year?
+    - when is your birthday?
+    - when were you born?
+    - when you were bon
+    - What's your age?
+- intent: ask_isbot
+  examples: |
+    - Ar you a bot ?
+    - Are you a bot
+    - Are you a chat bot?
+    - Are you the bot?
+    - Hi there, are you the bot?
+    - are you a BOT
+    - are you a Skynet ?
+    - are you a bot
+    - are you a bot ?
+    - are you a bot?
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+- intent: ask_ishuman
+  examples: |
+    - hey are you human
+    - are u human
+    - r u a human
+    - are you real human?
+    - you are a human
+    - Rara, are you a human?
+    - you are bot or human?
+    - are you human
+    - ok, i know i confused you there being a human! :)
+    - you are human or bot
+    - Are you human?
+    - are you a human ?
+    - Are you human ?
+    - Are you a human being?
+    - sara, are you a robot or human?
+    - r u real?
+    - are you a real person
+    - are u a real person?
+    - Are you a real person?
+    - are you a real person?
+    - are you real person or chat bot?
+    - So I'm here Today to ask one very simple question, what are you ?
+    - you sound like a real human
+    - wow you sound like real human
+    - are you human ?
+- intent: ask_languagesbot
+  examples: |
+    - Are you familiar with more than one language?
+    - Can you communicate in any other languages?
+    - Can you speak more than one language?
+    - Do you know any other languages?
+    - Do you know other languages?
+    - Do you speak [german](language)?
+    - Do you speak any other languages?
+    - Do you understand [spanish](language)?
+    - How many different languages are you fluent in?
+    - How many languages are you familiar with?
+    - How many languages can you speak?
+    - How many languages do you have knowledge of?
+    - How many languages do you know?
+    - In what languages are you fluent enough?
+    - In which languages are you fluent?
+    - In which languages can you speak?
+    - Speak any other languages?
+    - What are all of the different languages you can speak?
+    - What are the languages you can speak?
+    - What do you speak?
+    - What languages are you fluent in?
+    - What languages can you communicate in?
+    - What languages can you converse in?
+    - What languages can you use?
+    - What languages do you know how to use?
+    - What languages do you know?
+    - What languages do you speak?
+    - Which languages are you familiar with?
+    - Which languages do you speak?
+    - are you bilingual?
+    - are you multilingual?
+    - can you speak [Spanish](language)?
+    - can you speak in [italian](language)?
+    - do you know [chinese](language)
+    - do you speak [dutch](language)?
+    - do you speak [german](language)?
+    - do you speak any other languages?
+    - how many languages are you fluent in?
+    - how many languages do you know?
+    - tell me some languages you know?
+    - what else do you know besides [English](language)?
+    - what foreign languages are you fluent in?
+    - what foreign languages do you know?
+    - what language do you use
+    - what languages are you comfortable speaking at?
+    - what languages are you familiar with?
+    - what languages are you good at speaking?
+    - what languages do you know?
+    - what languages do you speak
+    - what languages you are well versed ?
+    - what languages you can be comfortable speaking?
+    - what languages you can handle well?
+    - what languages you can speak ?
+    - what languages you know?
+    - what languages you prefer more speaking at?
+    - which languages do you understand?
+    - you know [French](language)
+    - you speak [french](language) ?
+    - I want to speak binary with you
+    - ARE YOU [SPANISH](language)
+    - we cant converse in [french](language)?
+    - can we converse in [french](language)?
+    - Do you speak [italian](language)?
+- intent: ask_restaurant
+  examples: |
+    - Any good restaurants nearby?
+    - Can you find a restaurant for me?
+    - Can you find me a burger joint?
+    - Can you find me a restaurant?
+    - Can you recommend a restaurant open right now
+    - Could you find a restaurant for me?
+    - Could you find me a restaurant to eat at?
+    - Could you find me a restaurant?
+    - Do you find me a restaurant?
+    - Do you seek me a restaurant?
+    - Find a restaurant for me to eat at.
+    - Find a restaurant for me where I can eat.
+    - Find a restaurant for me?
+    - Find me a fast food restaurant.
+    - Find me a place to eat
+    - Find me a restaurant where I can eat.
+    - Have you seen me a restaurant?
+    - Help me find a restaurant
+    - Help me with finding this restaurant
+    - Hey help me find a restaurant
+    - Hey, can you help me with locating this restaurant.
+    - Hi, can you give me the nearest fast food place?
+    - How can you help me find a restaurant.
+    - I am hungry, find me some place to go
+    - I need a new restaurant
+    - I need a restaurant.
+    - I need to find this restaurant
+    - I'm gonna need help finding a restaurant
+    - I'm looking for a Spanish restaurant.
+    - IS there any near by restaurant?
+    - Is there any restaurant?
+    - Pick a restaurant for me, please
+    - Recommend me a restaurant around here.
+    - Show me how to find a restaurant
+    - Show me the closest open restaurant
+    - Suggest me a good restaurant around
+    - What restaurant would you recommend for dinner?
+    - What's a good place to eat nearby
+    - What's the closest restaurant open near me
+    - Where is the restaurant
+    - Where should I eat?
+    - Where should I go for dinner?
+    - Will you find me a restaurant?
+    - Would you find a restaurant for me?
+    - Would you find any restaurant?
+    - Would you find me a restaurant?
+    - can i be shown a gluten free restaurant
+    - can you find me a restaurant?
+    - help me find restaurant
+    - i want a french restaurant
+    - i'm looking for a Chinese restaurant
+    - restaurants
+    - will you see any restaurant for me?
+    - I want to find some restauant nearby
+    - show me restaurents
+- intent: ask_time
+  examples: |
+    - Can you give me the time?
+    - Can you tell me the time?
+    - Can you tell me what time it is?
+    - Can you tell the time?
+    - Could you tell me the time, please?
+    - Could you tell me the time?
+    - Could you tell me what time is it?
+    - Do you have the time?
+    - Do you know the time?
+    - Do you know what time it is?
+    - Excuse me, what time is it?
+    - Give me the time.
+    - Hi, I need the time.
+    - I need to know what time it is.
+    - Pardon me, but do you know the time?
+    - Tell me the time.
+    - Time, please!
+    - Time?
+    - What is the current time?
+    - What is the exact time?
+    - What is the hour and minute right now?
+    - What is the time?
+    - What might the time be?
+    - What time do we have?
+    - What time have we got?
+    - What time is it in dehradun?
+    - What time is it right now?
+    - What's the current time?
+    - What's the time right now?
+    - What's the time?
+    - Would you tell me what time it is?
+    - do you have the time?
+    - do you know the current time?
+    - tell me the current time.
+    - tell me the time it is.
+    - tell me the time.
+    - tell me what time you have.
+    - that's true. do you know what time it is?
+    - what is the current time?
+    - what is the time ?
+    - what is the time in Sydney?
+    - what is the time?
+    - what is time in US ?
+    - what is time is US ?
+    - what is time is USA ?
+    - what time do you have?
+    - what time is it
+    - what time is it?
+    - what time it is
+    - what's the time
+    - whats the time now
+- intent: ask_weather
+  examples: |
+    - Are there any meteorological changes that I need to be aware of?
+    - Are we in for a scorcher?
+    - Beautiful day, isn't it?
+    - Can I ask you something about weather
+    - Can we expect any thunderstorms?
+    - Do you have good weather?
+    - How is the weather today?
+    - How is the weather?
+    - How is weather today
+    - Is it hot or cold?
+    - Is it humid out there today?
+    - Is it quite breezy outside?
+    - Is it raining
+    - Is it raining?
+    - Looks like a beautiful day hey?
+    - Nice day out today?
+    - Weather?
+    - What is the temperature today?
+    - What is the weather at your place?
+    - What is the weather for tomorrow?
+    - What is the weather in newyork?
+    - What's it like out there?
+    - What's the weather forecast?
+    - What's the weather like over there?
+    - What's the weather like where I am right now?
+    - What's the weather like?
+    - Will I require my raincoat today?
+    - Will the skies be clear today?
+    - Will we build a snowman today?
+    - excellent - is it hot in Berlin?
+    - how is the weather
+    - how is the weather ?
+    - how is the weather in berlin?
+    - how is the weather?
+    - how's the weather ?
+    - how's the weather in berlin
+    - how's the weather?
+    - how's weather
+    - hows the waether
+    - hows the weather in bot world
+    - hows the weather today in berlin?
+    - is it hot ?
+    - is it hot outside ?
+    - is it sunny
+    - is the sun out where you are?
+    - is the sun out where zou are?
+    - it is cold
+    - temperature?
+    - the weather today
+    - weatger
+    - weather
+    - weather?
+    - well, if you wish: what about the weather
+    - what about the weather in Lüneburg
+    - what is the temperature
+    - what is the wather
+    - what is the weatehr
+    - what is the weather
+    - what is the weather in Berlin
+    - what is the weather in zurich?
+    - what is the weather like where you are?
+    - what is the weather like?
+    - what is the whether today
+    - what the wheather like?
+    - what"s the weather
+    - what's the weather
+    - what's the weather like
+    - what's the weather like in moussoori
+    - what's the weather like where you are?
+    - what's the weather like?
+    - what's the weather today
+    - what's the weather today?
+    - whats the temperature
+    - whats the temperature in delhi?
+    - whats the weather in dehradun?
+    - whats the weather like tomorrow?
+    - wheather at you location?
+    - wheather be like at your place?
+- intent: ask_whatismyname
+  examples: |
+    - Can you tell me my name?
+    - Can you tell me what I am called?
+    - Do I have a name?
+    - Do I have a name? What is it?
+    - Do you know my name?
+    - Do you know what my name is?
+    - Explain my name to me.
+    - I have a name, what is it?
+    - I'd like to know my name
+    - I'd like to know what my name is
+    - Inform me what my name is
+    - May i know my name?
+    - Please let me know what my name is
+    - Say my name.
+    - Tell me my name
+    - Tell me my name.
+    - What am I called?
+    - What could be my name?
+    - What did my parents name me?
+    - What do I call myself?
+    - What do my colleagues call me?
+    - What do people call me?
+    - What does everyone call me?
+    - What else do people call me?
+    - What exactly is my name?
+    - What is my first name?
+    - What is my full name?
+    - What is my name?
+    - What is the name I was given?
+    - What name do I go by?
+    - What name should I recognize for myself?
+    - What was I named?
+    - What would be the name on my tombstone?
+    - can you tell me my name?
+    - what is my name
+    - what is my name?
+    - what's my name?
+- intent: ask_whatspossible
+  examples: |
+    - Can you explain me in one sentence what you are doing?
+    - Can you help me?
+    - Could you please show me what you can
+    - Great, is there anything else you can do, bot?
+    - How can you help me
+    - How you help me?
+    - I need help
+    - I need some help
+    - What are my options
+    - What are you able to do?
+    - What can I ask you?
+    - What can I do?
+    - What can you demo
+    - What can you do
+    - What can you do for me?
+    - What can you do?
+    - What can you tell me?
+    - What do you do
+    - anything els
+    - are there any other options?
+    - can I ask you anything else?
+    - can you do anything else?
+    - can you help me
+    - can you help me?
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help
+    - help me
+    - help please
+    - help pls
+    - help?
+    - hep me
+    - hi. Sara what do you do?
+    - hm that doesnt quite help me is there anything else you can do?
+    - how can i use you
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does this work?
+    - how u can help me
+    - how you help me
+    - i asked you if you can do anything else
+    - i don't know what i want
+    - i need help
+    - more info
+    - now what?
+    - options
+    - show me the menu
+    - show me what's possible
+    - so now what
+    - so what can you do
+    - so what can you do?
+    - so what can you help me with?
+    - so what next?
+    - talk to me
+    - talk to me!
+    - tell me something you can do
+    - tell me what's your skill
+    - um what now
+    - what are all the things you understand?
+    - what are the options?
+    - what are you ding
+    - what are you doing
+    - what are you good at?
+    - what can I ask ?
+    - what can I ask you?
+    - what can I do here
+    - what can I do with Sara?
+    - what can I do with this bot
+    - what can i do here
+    - what can i do now
+    - what can u do
+    - what can we talk about?
+    - what can you answer
+    - what can you do
+    - what can you do for me
+    - what can you do, sara?
+    - what can you do?
+    - what can you offer me?
+    - what can you tell me
+    - what can you?
+    - what cn u do for me ?
+    - what do you do
+    - what do you do?
+    - what do you know except this?
+    - what else can I do here?
+    - what else can i do
+    - what else can i do?
+    - what else can you do?
+    - what else can you help with?
+    - what i have to do
+    - what is this bot for
+    - what u can do
+    - what u can do?
+    - what you can do
+    - what you can do for me?
+    - what you can do?
+    - what you do
+    - what you doing?
+    - what you talk about?
+    - you can hep me
+    - what can you teache me?
+    - Can you do calculations?
+    - what you can
+- intent: ask_wherefrom
+  examples: |
+    - Are you from around here?
+    - Around where are you from?
+    - Do you know where you come from?
+    - From where did you come?
+    - So where are you from
+    - What area are you from?
+    - What citizenship do you lay claim to?
+    - What city are you in?
+    - What city do you claim to for your birth?
+    - What city were you born in?
+    - What country are you from?
+    - What country were you born in?
+    - What is your birthplace?
+    - What is your heritage?
+    - What is your origin?
+    - What is your original location?
+    - What is your root?
+    - What location are you from?
+    - What state were you born in?
+    - What's the name of the place you came from?
+    - Where are you located?
+    - Where are you?
+    - Where are your origins?
+    - Where are your roots?
+    - Where did you come from?
+    - Where did you grow up?
+    - Where did you originate?
+    - Where do you come from?
+    - Where do you consider home?
+    - Where do you live?
+    - Where from?
+    - Where might you be from?
+    - Where were you at before you were here?
+    - Where were you born?
+    - You live around here?
+    - You were conceived in what location?
+    - are you from around here?
+    - what country are you from?
+    - where are from
+    - where are you from
+    - where are you from?
+    - where are your parents from?
+    - where did you come from?
+    - where did you grow up?
+    - where did you spend your youth?
+    - where do you come from?
+    - where do you live
+    - where do you live?
+    - where's your home town?
+- intent: ask_whoami
+  examples: |
+    - Can you tell me who I am?
+    - Can you tell me who am I?
+    - Do you know who I am?
+    - Do you know who am I?
+    - How can I determine who I am?
+    - How can I determine who am I?
+    - How do I discover who I am?
+    - How do I discover who am I?
+    - How do I identify myself?
+    - Okay who am I?
+    - Shall i know who am i?
+    - Tell me who I am.
+    - Tell me who I am?
+    - Tell me who am I?
+    - WHo am I
+    - Who am I?
+    - Who could I be?
+    - can you tell me what I am?
+    - can you tell me what my identity is?
+    - can you tell me who I am?
+    - tell me what my identity is?
+    - tell me who I am?
+    - what's my identity?
+    - who am i
+    - who are I ?
+    - who may i ?
+- intent: ask_whoisit
+  examples: |
+    - who are you
+    - who the hell are you?
+    - who are you?
+    - who are u
+    - who r u
+    - who is this
+    - tell me who you are
+    - what is your name
+    - hi what is your name?
+    - what is your name?
+    - what are you?
+    - what is ur name
+    - what I can call you
+    - your name?
+    - tell me your name
+    - what's your name
+    - what is you name
+    - what is you name and where are you from
+- intent: ask_builder
+  examples: |
+    - who build you?
+    - who create you?
+    - who developed you?
+    - who made you?
+    - you are created by whome
+    - who build you
+- intent: ask_telljoke
+  examples: |
+    - tell me a joke
+    - can you tell me a funny joke
+    - make a joke
+    - through me fine joke
+    - do you know any joke
+    - Hey Buddy , Tell me a joke 
+    - suggest me some good joke
+- intent: ask_movies
+  examples: |
+    - Hey Buddy , what movies you would suggest to watch
+    - tell me name of some good movies
+    - good movies name
+    - must watch movies
+    - what are good movies to watch?
+    - name few good movies
+    - tell me good movies name
+- intent: ask_nicetomeetyou
+  examples: |
+    - nice to meet you
+    - its a nice meeting with you
+    - it's good to see you
+    - its nice to be in touch with you
+    - its a nice meeting
+- intent: ask_handleinsult
+  examples: |
+    - you wanted to insult me
+    - mother fucker
+    - fuck
+    - what the fuck
+    - bastered
+    - shit
+    - porn hub
+- intent: ask_transport
+  examples: |
+    - transport facility in upes
+    - transport assistance
+    - i want transport facility from vasant vihar
+    - i want transport facility from prem nagar
+    - contact for transport facility
+    - i need transport assistance
+    - whom to contact for transport assistance
+    - transport assistance helpdesk
+    - does upes provide transport facility
+- intent: ask_attendance
+  examples: |
+    - my attendance not updated on portal
+    - attendance not marked on sap portal
+    - attendance not marked on portal
+    - attendance issues
+    - problem in attendance marking
+    - i am being marked absent on portal
+    - attendance not updated on SAP portal
+    - attendace
+    - issues in attendance
+    - issues with student attendance
+    - problem in attendance
+    - card is not punching and attendance not marked
+    - card is punched but showing absent
+- intent: ask_timetable
+  examples: |
+    - unable to view time table
+    - partial time table is visible
+    - regarding status of registration
+    - how to know the status of registration
+    - time table is partially visible
+    - complete time table is not visible
+    - time table not visible
+    - timetable not visible
+    - timetable not coming on SAP
+    - timetable
+    - time table not visible on SAP portal
+    - why my timetable is not showing
+    - i am not able to see my timetable
+    - i have issue in timetable
+    - timetable problem
+    - timetable issues
+    - timetable not showing
+    - how to resolve my timetable issue
+- intent: ask_taxcertificate
+  examples: |
+    - fee receipt requirement
+    - fee receipt
+    - how i can get the fee receipt
+    - from where i can take the fee receipt
+    - i want fee receipt
+    - income tax certificate requirement
+    - i need income tax certificate
+    - from where i can get the income tax certificate
+    - income tax certificate
+- intent: ask_offerletter
+  examples: |
+    - Need offer letter for bank loan
+    - how to get the offer letter for bank loan
+    - offer letter for bank loan
+    - offer letter
+    - i apply for bank loan for which need offer letter from university
+    - offer letter from university
+    - upes offer letter
+    - university offer letter
+    - requirement of offer letter
+    - from where i can get the offer letter
+- intent: ask_healthcard
+  examples: |
+    - I need information on my Health card
+    - I need information on my Insurance card
+    - I need information on my Medical Insurance
+    - how to get health card
+    - how to get insurance card
+    - how to get medical insurance
+    - health card
+    - insurance card
+    - medical insurance
+    - health card information
+    - insurance card information
+    - medical insurance information
+- intent: ask_duplicatecard
+  examples: |
+    - How to apply for duplicate id card
+    - How to apply for duplicate identity card
+    - duplicate id card
+    - want to apply for duplicate card
+    - i lost my id card
+    - lost my student id card
+    - student id card lost
+    - i lost my student id card somewhere
+    - what is the process to get the new id card
+    - want new id card
+    - need new id card
+    - need duplicate id card
+    - how to get the new id card
+    - how to get the new identity card
+    - how to get the duplicate id card
+    - process to get the new id card
+    - process to get the duplicate id card
+    - duplicate id
+- intent: ask_bonafide
+  examples: |
+    - How to apply for bonafide?
+    - how to get bonafide certificate
+    - bonafide certificate
+    - bonafide
+    - want to apply for bonafide
+    - process to get the bonafide certificate
+    - need bonafide certificate
+    - need bonafide
+- intent: ask_changename
+  examples: |
+    - Name change request
+    - change address details
+    - change contact details
+    - change email
+    - need to update my email id
+    - how to change email
+    - how to change contant details
+    - how to change address
+    - how to change name
+    - want to change my name
+    - name change
+    - change address
+    - update email
+    - update contact details
+    - update contact
+    - update name
+    - update address
+    - need to update my conact details
+- intent: ask_libraryhold
+  examples: |
+    - Not able to do re-registration due to financial hold
+    - Not able to do re-registration due to library hold
+    - can not able to do reregistration due to financial hold
+    - can not able to do reregistration due to library hold
+    - how to clear library hold
+    - how to clear financial hold
+    - library hold
+    - financial hold
+    - can't do re-registration due to financial hold
+- intent: ask_classissue
+  examples: |
+    - Blackboard mapping
+    - class recording issue
+    - facing blackboard mapping issue
+    - facing class recording issue
+    - how to resolve black board mapping issue
+    - how to resolve blackboard mapping
+    - how to resolve class recording issue
+- intent: ask_deduction
+  examples: |
+    - Did not apply for supple but amount deducted
+    - need refund of deducted amount
+    - extra amount deducted, need refund
+    - apply for supple extra amount deducted, need refund
+    - how to get the refund of extra amount deducted
+    - why extra money deducted for supplementary exam, need refund
+    - refund for extra money deduction
+    - amount deducted, need refund
+- intent: ask_back
+  examples: |
+    - Have cleared subject exam but showing back on grade card
+    - showing back on my grade card
+    - i am pass but showing fail in grade card
+    - i passed the subject but showing fail in result
+    - showing back on grade card
+    - fail on grade card but pass
+    - why showing back on grade card but pass the subject
+- intent: ask_boyshostel
+  examples: |
+    - how to reach boys hostel?
+    - where is boys hostel in upes?
+    - boys hostel in upes
+    - location of boys hostel in upes
+    - location of boys hostel
+    - boys hostel location
+    - boys hostel
+- intent: ask_girlshostel
+  examples: |
+    - how to reach girls hostel?
+    - where is girls hostel in upes?
+    - girls hostel in upes
+    - location of girls hostel in upes
+    - location of girls hostel
+    - girls hostel location
+    - girls hostel
+- intent: ask_classrooms
+  examples: |
+    - classrooms in upes
+    - class rooms 
+    - how to visit class rooms in upes
+    - upes classrooms
+    - upes class rooms
+    - i want to see class rooms of upes
+    - class rooms looks like in upes
+    - classrooms
+- intent: ask_dsw
+  examples: |
+    - how to reach student welfare office?
+    - where is student welfare office?
+    - location of student welfare office
+    - how to reach dsw office?
+    - location of dsw office
+    - where is dsw office?
+    - how to reach dsw office
+    - how to reach dean student welfare
+    - where is DSW office
+    - location of dsw office in university
+    - location of dean student welfare office in campus
+    - direct me to dsw office
+    - help me to reach dsw office
+    - dsw location
+    - dsw location on google map
+- intent: ask_electricalstation
+  examples: |
+    - where is electrical sub-station in upes?
+    - location of electrical sub-station
+    - electrical sub-station
+    - electric sub-station
+    - electric station
+    - how to reach to electrical sub-station in upes?
+- intent: ask_firerig
+  examples: |
+    - where is fire rig zone in upes?
+    - how to reach to fire rig zone?
+    - location of fire rig zone
+    - fire rig zone in upes
+    - fire rig zone
+- intent: ask_firetraining
+  examples: |
+    - where is fire training ground in upes?
+    - how to reach to fire training ground in upes?
+    - location of fire training ground
+    - fire training ground
+    - fire training ground location
+- intent: ask_hubble
+  examples: |
+    - how to reach hubble?
+    - how to reach hubble block?
+    - hubble block location
+    - hubble location
+    - location of hubble block in upes
+    - where is hubble in upes?
+    - where is hubble?
+- intent: ask_hubblelift
+  examples: |
+    - lift location in hubble
+    - lift in hubble
+    - is there lift in hubble bock?
+    - where is lift in hubble block?
+    - location of lift in hubble 
+- intent: ask_printer
+  examples: |
+    - where is centralized printer in upes?
+    - location of centralized printer in upes
+    - location of centralized printer
+    - centralized printer facility
+    - printer facility
+    - is there printer available in upes
+- intent: ask_pump
+  examples: |
+    - where is pump location in upes?
+    - pump location 
+    - how to reach pump location?
+    - pump location in upes
+- intent: ask_rainharvesting
+  examples: |
+    - where is rain harvesting in upes?
+    - location of rain harvesting in upes
+    - rain harvesting in upes
+    - rain harvesting points in upes
+    - rain harvesting
+- intent: ask_safetyzone
+  examples: |
+    - is there any safety zone in upes?
+    - safety zone in upes
+    - locations of safety zone in upes
+    - safety zones
+    - where are safety zones in upes?
+    - how to reach safety zones in upes?
+- intent: ask_sewageplant
+  examples: |
+    - is the sewage plant in upes?
+    - sewage treatment plant in upes
+    - sewage plant in upes
+    - sewage plant
+    - where is sewage plant in upes?
+    - how to reach sewage plant in upes?
+    - location of sewage plant
+- intent: ask_solartree
+  examples: |
+    - solar tree location
+    - location of solar tree in upes
+    - where is solar tree in upes?
+    - how to reach to solar tree in upes?
+    - solar tree
+- intent: ask_sportsarena
+  examples: |
+    - sports facility in upes
+    - sports arena in upes
+    - location of sports area
+    - how to reach sports area in upes?
+    - sports ground in upes
+    - sports arena
+    - sports ground
+    - how to reach sports ground?
+    - where is sports arena in upes?
+    - where is sports complex in upes?
+    - how to reach sports area? 
+#- intent: nlu_fallback
+ # examples: |
+ #   - faculty information
+  #  - head of the department
+   # - vice chancellor name
+   # - ankit.kumar@ddn.upes.ac.in
+   # - gym application
+   # - i forget my login credentials

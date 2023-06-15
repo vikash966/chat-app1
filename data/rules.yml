@@ -1,0 +1,557 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: demo rule
+  steps:
+  - intent: ask_hostel
+  - action: utter_hostel
+
+- rule: id card not working
+  steps:
+  - intent: ask_id
+  - action: utter_id
+   
+- rule: book exploratoryissue
+  steps:
+  - intent: ask_bookexploratory
+  - action: utter_bookexploratory
+   
+
+- rule: book bookelective
+  steps:
+  - intent: ask_bookelective
+  - action: utter_bookelective
+   
+
+- rule: issues in fee payment rule
+  steps:
+  - intent: ask_feepaymentissue
+  - action: utter_feepaymentissue
+   
+
+- rule: issue with debar list rule
+  steps:
+  - intent: ask_issuewithdebarlist
+  - action: utter_issuewithdebarlist
+
+- rule: scholarship issue rule
+  steps:
+  - intent: ask_scholarshipissue
+  - action: utter_scholarshipissue
+   
+- rule: library rule
+  steps:
+  - intent: ask_library
+  - action: utter_library
+   
+- rule: coursera issue rule
+  steps:
+  - intent: ask_courseraissue
+  - action: utter_courseraissue
+   
+- rule: course change rule
+  steps:
+  - intent: ask_coursechange
+  - action: utter_coursechange
+   
+- rule: domicile discount rule
+  steps:
+  - intent: ask_domicilediscount
+  - action: utter_domicilediscount
+   
+- rule: feewaiver rule
+  steps:
+  - intent: ask_feewaiver
+  - action: utter_feewaiver
+   
+- rule: withdrawal rule
+  steps:
+  - intent: ask_withdrawal
+  - action: utter_withdrawal
+   
+- rule: bulletin discount rule
+  steps:
+  - intent: ask_bulletin
+  - action: utter_bulletin
+
+- rule: installment rule
+  steps:
+  - intent: ask_installment
+  - action: utter_installment
+   
+- rule: block rule
+  steps:
+  - intent: ask_block
+  - action: utter_block
+  - action: utter_block6
+   
+- rule: asking for library location rule
+  steps:
+  - intent: ask_libraryloc
+  - action: utter_librarypic
+  - action: utter_libraryloc
+   
+- rule: asking for MAC rule
+  steps:
+  - intent: ask_mac
+  - action: utter_macpic
+  - action: utter_mac
+
+- rule: foodcourt rule
+  steps:
+  - intent: ask_foodcourt
+  - action: utter_foodcourtpic
+  - action: utter_foodcourt
+
+- rule: infirmary rule
+  steps:
+  - intent: ask_infirmary
+  - action: utter_infirmarypic
+  - action: utter_infirmary
+
+- rule: asking for finance office rule
+  steps:
+  - intent: ask_finance
+  - action: utter_financepic
+  - action: utter_finance
+   
+- rule: asking for dsw office rule
+  steps:
+  - intent: ask_dsw
+  - action: utter_dswpic
+  - action: utter_dsw
+
+- rule: exam info rule
+  steps:
+  - intent: ask_examinfo
+  - action: utter_examinfo
+
+- rule: exam issue rule
+  steps:
+  - intent: ask_examissue
+  - action: utter_examissue
+
+- rule: exam tech issue rule
+  steps:
+  - intent: ask_examtechissue
+  - action: utter_examtechissue
+
+- rule: deptt info rule
+  steps:
+  - intent: ask_depttinfo
+  - action: utter_depttinfo
+
+- rule: academic info rule
+  steps:
+  - intent: ask_academicinfo
+  - action: utter_academicinfo
+   
+- rule: late fee fine waiver info rule
+  steps:
+  - intent: ask_latefeefinewaiver
+  - action: utter_latefeefinewaiver
+
+- rule: announcement rule
+  steps:
+  - intent: ask_announcement
+  - action: utter_announcement
+
+- rule: registration rule
+  steps:
+  - intent: ask_registration
+  - action: utter_registration
+
+- rule: bifurcation rule
+  steps:
+  - intent: ask_bifurcation
+  - action: utter_bifurcation
+
+- rule: supple deadline over rule
+  steps:
+  - intent: ask_suppledeadlineover
+  - action: utter_suppledeadlineover
+   
+- rule: exploratory issue rule
+  steps:
+  - intent: ask_exploratoryissue
+  - action: utter_exploratoryissue
+
+- rule: result not visible over rule
+  steps:
+  - intent: ask_resultnotvisible
+  - action: utter_resultnotvisible
+
+- rule: student portal issue over rule
+  steps:
+  - intent: ask_studentportalissue
+  - action: utter_studentportalissue
+
+- rule: fee refund rule
+  steps:
+  - intent: ask_feerefund
+  - action: utter_feerefund
+
+- rule: tax certificate rule 
+  steps:
+  - intent: ask_taxcertificate
+  - action: utter_taxcertificate   
+
+- rule: offer letter rule
+  steps:
+  - intent: ask_offerletter
+  - action: utter_offerletter
+
+- rule: health card rule 
+  steps:
+  - intent: ask_healthcard
+  - action: utter_healthcard
+
+- rule: duplicate card rule 
+  steps:
+  - intent: ask_duplicatecard
+  - action: utter_duplicatecard
+
+- rule: bonafide rule 
+  steps:
+  - intent: ask_bonafide
+  - action: utter_bonafide
+
+- rule: change name rule
+  steps:
+  - intent: ask_changename
+  - action: utter_changename
+
+- rule: library hold rule
+  steps:
+  - intent: ask_libraryhold
+  - action: utter_libraryhold
+
+- rule: deduction rule
+  steps:
+  - intent: ask_deduction
+  - action: utter_deduction
+
+- rule: showing back rule
+  steps:
+  - intent: ask_back 
+  - action: utter_back
+
+- rule: class issue rule
+  steps:
+  - intent: ask_classissue   
+  - action: utter_classissue
+
+- rule: datesheet publish rule
+  steps:
+  - intent: ask_datesheetpublish
+  - action: utter_datesheetpublish
+  
+- rule: register supple rule
+  steps:
+  - intent: ask_registersupple   
+  - action: utter_registersupple
+
+- rule: forget supple details rule
+  steps:
+  - intent: ask_forgetsuppledetails   
+  - action: utter_forgetsuppledetails
+
+- rule: progression policy rule
+  steps:
+  - intent: ask_progressionpolicy   
+  - action: utter_progressionpolicy
+
+- rule: reevaluation rule
+  steps:
+  - intent: ask_reevaluation   
+  - action: utter_reevaluation
+
+- rule: reevaluation fee rule
+  steps:
+  - intent: ask_reevaluationfee
+  - action: utter_reevaluationfee
+
+- rule: reevaluation result rule
+  steps:
+  - intent: ask_reevaluationresult   
+  - action: utter_reevaluationresult
+
+- rule: improvementexam rule
+  steps:
+  - intent: ask_improvementexam   
+  - action: utter_improvementexam
+
+- rule: ufm details rule
+  steps:
+  - intent: ask_ufm   
+  - action: utter_ufm
+
+- rule: not having id exam rule
+  steps:
+  - intent: ask_nothavingidexam
+  - action: utter_nothavingidexam
+
+- rule: download grade card rule
+  steps:
+  - intent: ask_downloadgradecard   
+  - action: utter_downloadgradecard
+
+- rule: download GPA rule
+  steps:
+  - intent: ask_downloadGPA   
+  - action: utter_downloadGPA
+
+- rule: download hall ticket rule
+  steps:
+  - intent: ask_downloadhallticket   
+  - action: utter_downloadhallticket
+
+- rule: collect grade card rule
+  steps:
+  - intent: ask_collectgradecard   
+  - action: utter_collectgradecard
+
+- rule: greet new rule
+  steps:
+  - intent: greetnew   
+  - action: utter_greetnew
+
+- rule: education loan rule
+  steps:
+  - intent: ask_educationloan
+  - action: utter_educationloan
+
+- rule: attendance issue rule
+  steps:
+  - intent: ask_attendance   
+  - action: utter_attendance
+
+- rule: timetable issue rule
+  steps:
+  - intent: ask_timetable   
+  - action: utter_timetable
+
+- rule: authority letter rule
+  steps:
+  - intent: ask_authorityletter   
+  - action: utter_authorityletter
+
+- rule: asking for writer rule
+  steps:
+  - intent: ask_writer   
+  - action: utter_writer
+
+- rule: tell joke rule
+  steps:
+  - intent: ask_telljoke 
+  - action: utter_telljoke
+
+- rule: asking for builder rule
+  steps:
+  - intent: ask_builder   
+  - action: utter_builder
+
+- rule: asking for howbuilt rule
+  steps:
+  - intent: ask_howbuilt   
+  - action: utter_howbuilt
+
+- rule: asking for howdoing rule
+  steps:
+  - intent: ask_howdoing   
+  - action: utter_howdoing
+
+- rule: asking for howold rule
+  steps:
+  - intent: ask_howold   
+  - action: utter_howold
+
+- rule: asking for isbot rule
+  steps:
+  - intent: ask_isbot   
+  - action: utter_isbot
+
+- rule: asking for ishuman rule
+  steps:
+  - intent: ask_ishuman   
+  - action: utter_ishuman
+
+- rule: asking for restaurant rule
+  steps:
+  - intent: ask_restaurant
+  - action: utter_restaurant 
+
+- rule: asking for time rule
+  steps:
+  - intent: ask_time
+  - action: utter_time
+
+- rule: asking for languagesbot rule
+  steps:
+  - intent: ask_languagesbot
+  - action: utter_languagesbot
+   
+- rule: asking for weather rule
+  steps:
+  - intent: ask_weather
+  - action: utter_weather
+
+- rule: asking for whatismyname rule
+  steps:
+  - intent: ask_whatismyname
+  - action: utter_whatismyname
+   
+- rule: whatspossible rule
+  steps:
+  - intent: ask_whatspossible   
+  - action: utter_whatspossible
+
+- rule: asking for wherefrom rule
+  steps:
+  - intent: ask_wherefrom   
+  - action: utter_wherefrom
+
+- rule: who am i rule
+  steps:
+  - intent: ask_whoami   
+  - action: utter_whoami
+
+- rule: asking for who is it rule
+  steps:
+  - intent: ask_whoisit
+  - action: utter_whoisit
+
+- rule: handle insult rule
+  steps:
+  - intent: ask_handleinsult
+  - action: utter_handleinsult
+   
+
+- rule: nice to meet you rule
+  steps:
+  - intent: ask_nicetomeetyou
+  - action: utter_nicetomeetyou
+
+- rule: asking for out of scope questions rule
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  
+- rule: asking for out of scope non english questions rule
+  steps:
+  - intent: out_of_scope_non_english   
+  - action: utter_out_of_scope_non_english
+
+- rule: asking for transport rule
+  steps:
+  - intent: ask_transport   
+  - action: utter_transport
+
+- rule: asking for movies rule
+  steps:
+  - intent: ask_movies   
+  - action: utter_movies
+
+- rule: asking for boyshostel rule
+  steps:
+  - intent: ask_boyshostel 
+  - action: utter_boyshostelpic
+  - action: utter_boyshostel
+  
+- rule: asking for girlshostel rule
+  steps:
+  - intent: ask_girlshostel  
+  - action: utter_girlshostelpic
+  - action: utter_girlshostel
+  
+- rule: asking for classrooms rule
+  steps:
+  - intent: ask_classrooms
+  - action: utter_classroomspic
+  - action: utter_classrooms
+  
+- rule: asking for electricalstation rule
+  steps:
+  - intent: ask_electricalstation   
+  - action: utter_electricalstationpic
+  - action: utter_electricalstation
+   
+- rule: asking for firerig rule
+  steps:
+  - intent: ask_firerig  
+  - action: utter_firerigpic
+  - action: utter_firerig
+   
+- rule: asking for firetraining rule
+  steps:
+  - intent: ask_firetraining  
+  - action: utter_firetrainingpic
+  - action: utter_firetraining
+  
+- rule: asking for hubble rule
+  steps:
+  - intent: ask_hubble   
+  - action: utter_hubblepic
+  - action: utter_hubble
+
+- rule: asking for hubblelift rule
+  steps:
+  - intent: ask_hubblelift   
+  - action: utter_hubbleliftpic
+  - action: utter_hubblelift
+   
+- rule: asking for printer rule
+  steps:
+  - intent: ask_printer   
+  - action: utter_printerpic
+  - action: utter_printer
+  
+- rule: asking for pump rule
+  steps:
+  - intent: ask_pump   
+  - action: utter_pumppic
+  - action: utter_pump
+  
+- rule: asking for rainharvesting rule
+  steps:
+  - intent: ask_rainharvesting   
+  - action: utter_rainharvestingpic
+  - action: utter_rainharvesting
+  
+  
+- rule: asking for safetyzone rule
+  steps:
+  - intent: ask_safetyzone   
+  - action: utter_safetyzonepic
+  - action: utter_safetyzone
+  
+- rule: asking for sewageplant rule
+  steps:
+  - intent: ask_sewageplant   
+  - action: utter_sewageplantpic
+  - action: utter_sewageplant
+  
+- rule: asking for solartree rule
+  steps:
+  - intent: ask_solartree   
+  - action: utter_solartreepic
+  - action: utter_solartree
+  
+- rule: asking for sportsarena rule
+  steps:
+  - intent: ask_sportsarena   
+  - action: utter_sportsarenapic
+  - action: utter_sportsarena
+
+- rule: nlu fallback rule
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+#  - action: action_default_fallback
+

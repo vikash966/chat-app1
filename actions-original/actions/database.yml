@@ -1,0 +1,187 @@
+users:
+  "me@mail.com":
+    user_email: "me@mail.com"
+    user_otp: 54321
+  "example@mail.com":
+    user_email: "example@mail.com"
+    user_otp: 54321
+  "ankit.kumar@ddn.upes.ac.in":
+    user_email: "ankit.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "sanjeev.kumar@ddn.upes.ac.in":
+    user_email: "sanjeev.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "debabrota.das@pearlacademy.com":
+    user_email: "debabrota.das@pearlacademy.com"
+    user_otp: 54321
+  "jannat.sethi@gusindia.global":
+    user_email: "jannat.sethi@gusindia.global"
+    user_otp: 54321
+  "kanika.dhiman@ddn.upes.ac.in":
+    user_email: "kanika.dhiman@ddn.upes.ac.in"
+    user_otp: 54321
+  "divya.belwal@ddn.upes.ac.in":
+    user_email: "divya.belwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "mohit.dadhich@ddn.upes.ac.in":
+    user_email: "mohit.dadhich@ddn.upes.ac.in"
+    user_otp: 54321
+  "sandeep.das@gusindia.global":
+    user_email: "sandeep.das@gusindia.global"
+    user_otp: 54321
+  "ksingh@ddn.upes.ac.in":
+    user_email: "ksingh@ddn.upes.ac.in"
+    user_otp: 54321
+  "rahul.nainwal@ddn.upes.ac.in":
+    user_email: "rahul.nainwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "nishant.mishra@ddn.upes.ac.in":
+    user_email: "nishant.mishra@ddn.upes.ac.in"
+    user_otp: 54321
+  "ravi.iyer@ddn.upes.ac.in":
+    user_email: "ravi.iyer@ddn.upes.ac.in"
+    user_otp: 54321
+  "dsw.helpdesk@ddn.upes.ac.in":
+    user_email: "dsw.helpdesk@ddn.upes.ac.in"
+    user_otp: 54321
+  "gautam.bhatt@ddn.upes.ac.in":
+    user_email: "gautam.bhatt@ddn.upes.ac.in"
+    user_otp: 54321
+  "sonal.katewa@ddn.upes.ac.in":
+    user_email: "sonal.katewa@ddn.upes.ac.in"
+    user_otp: 54321
+  "mehul.buttan@gusindia.global":
+    user_email: "mehul.buttan@gusindia.global"
+    user_otp: 54321
+  "mannat.arora@ddn.upes.ac.in":
+    user_email: "mannat.arora@ddn.upes.ac.in"
+    user_otp: 54321
+  "500082075@stu.upes.ac.in":
+    user_email: "500082075@stu.upes.ac.in"
+    user_otp: 54321
+  "500080908@stu.upes.ac.in":
+    user_email: "500080908@stu.upes.ac.in"
+    user_otp: 54321
+  "50081167@stu.upes.ac.in":
+    user_email: "50081167@stu.upes.ac.in"
+    user_otp: 54321
+  "500076842@stu.upes.ac.in":
+    user_email: "500076842@stu.upes.ac.in"
+    user_otp: 54321
+  "500076916@ stu.upes.ac.in":
+    user_email: "500076916@ stu.upes.ac.in"
+    user_otp: 54321
+  "500098653@stu.upes.ac.in":
+    user_email: "500098653@stu.upes.ac.in"
+    user_otp: 54321
+  "500095369@stu.upes.ac.in":
+    user_email: "500098653@stu.upes.ac.in"
+    user_otp: 54321
+  "Ankit.kumar@ddn.upes.ac.in":
+    user_email: "ankit.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sanjeev.kumar@ddn.upes.ac.in":
+    user_email: "sanjeev.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "Debabrota.das@pearlacademy.com":
+    user_email: "debabrota.das@pearlacademy.com"
+    user_otp: 54321
+  "Jannat.sethi@gusindia.global":
+    user_email: "jannat.sethi@gusindia.global"
+    user_otp: 54321
+  "Kanika.dhiman@ddn.upes.ac.in":
+    user_email: "kanika.dhiman@ddn.upes.ac.in"
+    user_otp: 54321
+  "Divya.belwal@ddn.upes.ac.in":
+    user_email: "divya.belwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "Mohit.dadhich@ddn.upes.ac.in":
+    user_email: "mohit.dadhich@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sandeep.das@gusindia.global":
+    user_email: "sandeep.das@gusindia.global"
+    user_otp: 54321
+  "Ksingh@ddn.upes.ac.in":
+    user_email: "ksingh@ddn.upes.ac.in"
+    user_otp: 54321
+  "Rahul.nainwal@ddn.upes.ac.in":
+    user_email: "rahul.nainwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "Nishant.mishra@ddn.upes.ac.in":
+    user_email: "nishant.mishra@ddn.upes.ac.in"
+    user_otp: 54321
+  "Ravi.iyer@ddn.upes.ac.in":
+    user_email: "ravi.iyer@ddn.upes.ac.in"
+    user_otp: 54321
+  "Dsw.helpdesk@ddn.upes.ac.in":
+    user_email: "dsw.helpdesk@ddn.upes.ac.in"
+    user_otp: 54321
+  "Gautam.bhatt@ddn.upes.ac.in":
+    user_email: "gautam.bhatt@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sonal.katewa@ddn.upes.ac.in":
+    user_email: "sonal.katewa@ddn.upes.ac.in"
+    user_otp: 54321
+  "Mehul.buttan@gusindia.global":
+    user_email: "mehul.buttan@gusindia.global"
+    user_otp: 54321
+  "Mannat.arora@ddn.upes.ac.in":
+    user_email: "mannat.arora@ddn.upes.ac.in"
+    user_otp: 54321
+  "Ankit.Kumar@ddn.upes.ac.in":
+    user_email: "ankit.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sanjeev.Kumar@ddn.upes.ac.in":
+    user_email: "sanjeev.kumar@ddn.upes.ac.in"
+    user_otp: 54321
+  "Debabrota.Das@pearlacademy.com":
+    user_email: "debabrota.das@pearlacademy.com"
+    user_otp: 54321
+  "Jannat.Sethi@gusindia.global":
+    user_email: "jannat.sethi@gusindia.global"
+    user_otp: 54321
+  "Kanika.Dhiman@ddn.upes.ac.in":
+    user_email: "kanika.dhiman@ddn.upes.ac.in"
+    user_otp: 54321
+  "Divya.Belwal@ddn.upes.ac.in":
+    user_email: "divya.belwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "Mohit.Dadhich@ddn.upes.ac.in":
+    user_email: "mohit.dadhich@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sandeep.Das@gusindia.global":
+    user_email: "sandeep.das@gusindia.global"
+    user_otp: 54321
+  "Rahul.Nainwal@ddn.upes.ac.in":
+    user_email: "rahul.nainwal@ddn.upes.ac.in"
+    user_otp: 54321
+  "Nishant.Mishra@ddn.upes.ac.in":
+    user_email: "nishant.mishra@ddn.upes.ac.in"
+    user_otp: 54321
+  "Ravi.Iyer@ddn.upes.ac.in":
+    user_email: "ravi.iyer@ddn.upes.ac.in"
+    user_otp: 54321
+  "Dsw.Helpdesk@ddn.upes.ac.in":
+    user_email: "dsw.helpdesk@ddn.upes.ac.in"
+    user_otp: 54321
+  "Gautam.Bhatt@ddn.upes.ac.in":
+    user_email: "gautam.bhatt@ddn.upes.ac.in"
+    user_otp: 54321
+  "Sonal.Katewa@ddn.upes.ac.in":
+    user_email: "sonal.katewa@ddn.upes.ac.in"
+    user_otp: 54321
+  "Mehul.Buttan@gusindia.global":
+    user_email: "mehul.buttan@gusindia.global"
+    user_otp: 54321
+  "Mannat.Arora@ddn.upes.ac.in":
+    user_email: "mannat.arora@ddn.upes.ac.in"
+    user_otp: 54321
+  "500098653@stu.upes.ac.in":
+    user_email: "500098653@stu.upes.ac.in"
+    user_otp: 54321
+  "500076916@stu.upes.ac.in":
+    user_email: "500076916@stu.upes.ac.in"
+    user_otp: 54321
+  "500076842@stu.upes.ac.in":
+    user_email: "500076842@stu.upes.ac.in"
+    user_otp: 54321

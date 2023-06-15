@@ -1,0 +1,42 @@
+# rasax specific settings
+rasax:
+    # initialUser is the user which is created upon the initial start of Rasa Enterprise
+    initialUser:
+        # username specifies a name of this user - defaults to "admin"
+        #username: "admin"
+        # password for the Rasa Enterprise user
+        password: "rasa"
+    # passwordSalt Rasa Enterprise uses to salt the user passwords
+    #passwordSalt: "<safe credential>"
+    # token Rasa Enterprise accepts as authentication token from other Rasa services
+    #token: "<safe credential>"
+    # jwtSecret which is used to sign the jwtTokens of the users
+    #jwtSecret: "<safe credential>"
+# rasa: Settings common for all Rasa containers
+
+debugmode: true
+
+app:
+    name: anketvit/rasa-test
+    tag: server-v35
+rasa:
+    # token Rasa accepts as authentication token from other Rasa services
+    #token: "<safe credential>"
+    name: anketvit/rasa-test
+    tag: rasa-v35
+# RabbitMQ specific settings
+rabbitmq:
+    # rabbitmq settings of the subchart
+    auth:
+        # password which is used for the authentication
+        password: "rasa"
+# global settings of the used subcharts
+global:
+    # postgresql: global settings of the postgresql subchart
+    postgresql:
+        # postgresqlPassword is the password which is used when the postgresqlUsername equals "postgres"
+        postgresqlPassword: "rasa"
+    # redis: global settings of the redis subchart
+    redis:
+        # password to use in case there no external secret was provided
+        password: "rasa"

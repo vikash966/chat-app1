@@ -1,0 +1,59 @@
+# This example shows how to download a model from a remote location.
+#
+# Execute command: helmfile -f examples/rasa/download-model-helmfile.yaml sync
+#
+repositories:
+- name: rasa
+  url: https://helm.rasa.com
+
+releases:
+  - name: my-release
+    chart: rasa/rasa
+    values:
+      # Expose deployment via LoadBalancer
+      - service:
+          type: LoadBalancer
+
+      # Enable HTTPS for NGINX (self-signed)
+      - nginx:
+          tls:
+            enabled: true
+            generateSelfSignedCert: true
+
+      # Configure Rasa OSS
+      - applicationSettings:
+          # Enable debug mode
+          debugMode: true
+          # Don't train an initial model (you're going to download a model, that's why you don't need it)
+          trainInitialModel: false
+
+          # Credentials configuration
+          credentials:
+            additionalChannelCredentials:
+              # Enable REST channel
+              rest:
+              telegram:
+                access_token: "5863770404:AAFcTkAU_F9-CDDNTaq7a92S1VblRYonWPo"
+                verify: "upes_helpdesk_bot"
+                webhook_url: "https://g9rxydu3.ngrok.app/webhooks/telegram/webhook"
+      # Add a init container to the rasa deployment that downloads a model
+      - initContainers:
+        - name: download-model
+          image: "anketvit/rasa-test:rasa-v35"
+          command: ["/bin/sh", "-c"]
+          args:
+            - cd /app/models/ && wget https://github.com/anketvit/helpdesk/blob/main/models/20230512-091719-recent-batch.tar.gz?raw=true -O model.tar.gz
+          # The Rasa OSS by default loads models located in the /app/models directory,
+          # that's why you have to mount the directory to the init container
+          volumeMounts:
+            - mountPath: /app/models
+              name: models
+      # Create an emptyDir that is shared across containers within a pod
+      - volumes:
+        - name: models
+          emptyDir: {}
+
+      # Mount the /app/models directory to the rasa-oss container (the main container)
+      - volumeMounts:
+          - mountPath: /app/models
+            name: models

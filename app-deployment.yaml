@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: anketvit/rasa-test:server-v35
+          volumeMounts:
+            - name: actions-volume
+              mountPath: /app/actions
+      volumes:
+        - name: actions-volume
+          hostPath:
+            path: /home/ankit/chatbuddywologin/actions
+

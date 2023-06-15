@@ -1,0 +1,24 @@
+version: '3.0'
+
+services:
+  rasa:
+    image: anketvit/rasa-test:rasa-v35
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+      - --debug
+    depends_on:
+      - app
+  app:
+    image: anketvit/rasa-test:server-v35
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - "5055:5055"
+

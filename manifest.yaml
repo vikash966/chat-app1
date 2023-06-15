@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rasa-custom-model
+  labels:
+    app: rasa
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rasa
+  template:
+    metadata:
+      labels:
+        app: rasa
+    spec:
+      containers:
+      - name: rasa-demo
+        image: anketvit/rasa-test:rasa-v35
+        ports:
+          - containerPort: 5005
+        command: ["rasa", "run", "--enable-api", "--port", "5005", "--debug", "--verbose"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rasa-web
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: rasa
+  type: LoadBalancer

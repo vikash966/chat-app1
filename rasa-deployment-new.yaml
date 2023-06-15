@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rasa-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rasa
+  template:
+    metadata:
+      labels:
+        app: rasa
+    spec:
+      containers:
+        - name: rasa
+          image: anketvit/rasa-test:rasa-v35   # Replace with the desired Rasa image and tag
+          ports:
+            - containerPort: 5005   # Port on which Rasa will run
+          command: ["rasa", "run", "-m", "models", "--enable-api", "--cors", "*", "--debug"]
+        - name: action-server
+          image: anketvit/rasa-test:server-v35   # Replace with the desired Rasa SDK image and tag
+          ports:
+            - containerPort: 5055   # Port on which the action server will run
+          command: ["rasa", "run", "actions"]
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rasa-service
+spec:
+  selector:
+    app: rasa
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5005   # Port on which Rasa is running in the container
+  type: LoadBalancer
+

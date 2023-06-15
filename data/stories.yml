@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_mac
+  - action: utter_macpic
+  - action: utter_mac
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_hostel
+  - action: utter_hostel
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: greet
+  - action: utter_greet
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greetnew
+  - action: utter_greetnew
+  - intent: ask_hostel
+  - action: utter_hostel
+  - intent: ask_builder
+  - action: utter_builder
+  - intent: ask_howbuilt
+  - action: utter_howbuilt
+  - intent: ask_duplicatecard
+  - action: utter_duplicatecard
+  - intent: ask_registersupple
+  - action: utter_registersupple
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_mac
+  - action: utter_macpic
+  - action: utter_mac
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_hostel
+  - action: utter_hostel
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_duplicatecard
+  - action: utter_duplicatecard

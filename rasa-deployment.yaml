@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rasa-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rasa
+  template:
+    metadata:
+      labels:
+        app: rasa
+    spec:
+      containers:
+        - name: rasa
+          image: anketvit/rasa-test:rasa-v35
+          volumeMounts:
+            - name: app-volume
+              mountPath: /app
+          command:
+            - "run"
+            - "--enable-api"
+            - "--cors"
+            - "*"
+            - "--debug"
+      volumes:
+        - name: app-volume
+          hostPath:
+            path: /home/ankit/chatbuddywologin/models
+
